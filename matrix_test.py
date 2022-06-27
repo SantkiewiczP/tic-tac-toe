@@ -1,5 +1,7 @@
 import unittest
+
 from matrix import Matrix
+
 
 class TestMatrix(unittest.TestCase):
 
@@ -39,6 +41,7 @@ class TestMatrix(unittest.TestCase):
 
     def test_place_returns_true_if_not_occupied(self):
         pass
+
     def test_place_sets_symbol_if_not_occupied(self):
         pass
 

@@ -5,4 +5,3 @@ class Player:
 
     def make_decision(self, grid):
         pass
-

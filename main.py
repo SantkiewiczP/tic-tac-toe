@@ -1,7 +1,6 @@
 from art import logo
-from matrix import Matrix
-# from lars_matrix import Matrix
 from human_player import HumanPlayer
+from matrix import Matrix
 from random_player import RandomPlayer
 
 m = Matrix()
