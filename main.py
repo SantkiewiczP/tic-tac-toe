@@ -1,6 +1,6 @@
-import random
 from art import logo
 from matrix import Matrix
+# from lars_matrix import Matrix
 from human_player import HumanPlayer
 from random_player import RandomPlayer
 
@@ -10,12 +10,14 @@ a = RandomPlayer("O")
 
 print(logo)
 
-
-current_player = p
-round_count = 0
 while True:
+
+    current_player = p
+    round_count = 0
+
     m.clear()
-    choice = input("Would you like to play? Type 'y' or 'n': ").lower()
+
+    choice = input("Would you like to play? Type 'y' to start, 'q' to quit: ").lower()
     if choice == 'y':
         while round_count < 9:
             round_count += 1
@@ -39,7 +41,6 @@ while True:
             print(f"Player {current_player.symbol} won!")
         else:
             print("It's a draw!")
-            break
-    else:
-        print("Goodbye")
+    elif choice == 'q':
         break
+    print("Goodbye")

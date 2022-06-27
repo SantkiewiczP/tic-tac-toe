@@ -15,6 +15,10 @@ class Matrix:
         return self.grid
 
     def place(self, location, symbol):
+        if location[0] < 0 or location[1] < 0:
+            return False
+        if location[0] >= len(self.grid) or location[1] >= len(self.grid[0]):
+            return False
         if self.grid[location[0]][location[1]] != "_":
             return False
         self.grid[location[0]][location[1]] = symbol
